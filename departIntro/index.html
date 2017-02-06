@@ -6,10 +6,10 @@
 	<script>
         !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
 	</script>
-	<link rel="stylesheet" href="css/reset.less">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/swiper-3.4.1.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/index.less">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <div class="loading">
@@ -24,10 +24,10 @@
 		<div class="swiper-slide bg-cover page1">
 			<div class="p1-year ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/cover1.png">
+				<img src="img/cover1_0e7c283.png">
 			</div>
 			<div class="p1-bt ani" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay=".5s">
-				<img src="img/cover3.png" alt="">
+				<img src="img/cover3_3191725.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
@@ -39,7 +39,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p1.png" alt="">
+				<img src="img/p1_3eb6616.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration=".5s"
 				 swiper-animate-delay="0.5s">
@@ -55,7 +55,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p2.png" alt="">
+				<img src="img/p2_006afc0.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
@@ -67,7 +67,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p3-1.png" alt="">
+				<img src="img/p3-1_317a99d.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration=".5s"
 				 swiper-animate-delay="0.5s">
@@ -75,7 +75,7 @@
 			</div>
 			<div class="p3-img p-img ani" swiper-animate-effect="pulse" swiper-animate-duration=".5s"
 				 swiper-animate-delay="1s">
-				<img src="img/p3-2.png" alt="">
+				<img src="img/p3-2_cca3605.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
@@ -87,7 +87,7 @@
 			</div>
 			<div class="p-img ani" style="padding-top: 1.3rem;" swiper-animate-effect="rotateIn" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p4.png" alt="">
+				<img src="img/p4_d97aaa3.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".5s">
 				为了深入市场一线，支撑新华社业务，<span style="color: #cc0000;">互联鑫彩</span>在杭州诞生了。
@@ -102,7 +102,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p5.png" alt="">
+				<img src="img/p5_98c4cd8.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".5s" style="padding-top: 1.48309179rem;">
 				经过反复调试、周密筹备，我们的话费流量业务和彩票业务正式登陆在新华社客户端。
@@ -118,7 +118,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p6.png" alt="">
+				<img src="img/p6_c5170ee.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s"
 				 swiper-animate-delay=".5s">
@@ -136,7 +136,7 @@
 			</div>
 			<div class="p-img-t ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p7.png" alt="">
+				<img src="img/p7_1038e3e.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".5s">
 				业务在全面展开，团队也在逐渐壮大，我们在杭州寻觅了一个<span style="color: #cc0000">600平米</span>的新家。
@@ -151,7 +151,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p8.png" alt="">
+				<img src="img/p8_cce0bf5.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s"
 				 swiper-animate-delay=".5s">
@@ -167,7 +167,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p9.png" alt="">
+				<img src="img/p9_c7bd578.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s"
 				 swiper-animate-delay=".5s">
@@ -179,10 +179,10 @@
 		<div class="swiper-slide bg-cover page1">
 			<div class="p1-year ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/cover2.png">
+				<img src="img/cover2_d72cc68.png">
 			</div>
 			<div class="p1-bt ani" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay="1s">
-				<img src="img/cover3.png" alt="">
+				<img src="img/cover3_3191725.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
@@ -194,7 +194,7 @@
 			</div>
 			<div class="p-img-t ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p11.png" alt="">
+				<img src="img/p11_f6a9dca.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
@@ -205,7 +205,7 @@
 				<span class="zn-name" style="width: auto;">2.拥有自主产权的业务平台</span>
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0.1s" style="    padding-top: 1.5rem;">
-				<img src="img/p12.png" alt="">
+				<img src="img/p12_ec91bef.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
@@ -217,7 +217,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s" style="padding-top: 1.8rem;">
-				<img src="img/p13.png" alt="">
+				<img src="img/p13_3d01939.png" alt="">
 			</div>
 			<div class="p-text p-img ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".5s">
 				2016年话费业务开拓合作伙伴12家，单月销量突破10亿大关。
@@ -232,7 +232,7 @@
 			</div>
 			<div class="p-img ani" swiper-animate-effect="pulse" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p14.png" alt="">
+				<img src="img/p14_71f73ea.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
@@ -244,17 +244,17 @@
 			</div>
 			<div class="p-img-t1 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s"
 				 swiper-animate-delay="0.1s">
-				<img src="img/p15.png" alt="">
+				<img src="img/p15_2c86527.png" alt="">
 			</div>
 			<div class="arrow"></div>
 		</div>
 		<!--page16-->
 		<div class="swiper-slide bg-cover page1">
 			<div class="p-img ani" swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="0.1s">
-				<img src="img/p16-1.png" alt="">
+				<img src="img/p16-1_e23679c.png" alt="">
 			</div>
 			<div class="p1-bt fu-img" swiper-animate-effect="tada" swiper-animate-duration="1s" swiper-animate-delay="1s">
-				<img src="img/p16-2.png" alt="">
+				<img src="img/p16-2_58066fd.png" alt="">
 			</div>
 		</div>
 	</div>
