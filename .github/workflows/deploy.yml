@@ -19,11 +19,11 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: npm
-      - run: npm ci
+          node-version: 17
+          cache: pnpm
+      - run: pnpm ci
       - name: Build
-        run: npm run docs:build
+        run: pnpm run docs:build
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
